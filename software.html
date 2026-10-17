@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!-- templates/base.html: page skeleton. Implements PLAN.md section 4.2; structure per docs/source-site/STYLE.md. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software | Applied Topology Group</title>
+  <meta name="description" content="Chad Giusti&#x27;s academic web page">
+  <link rel="icon" href="assets/img/logos/atg-logo.png">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/nav.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="assets/img/logos/atg-logo.png" alt="Applied Topology Group home"></a>
+      <nav class="nav nav--desktop" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li class="active"><a href="software.html" aria-current="page">Software</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="personal.html">Personal</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu"><span></span></button>
+    </div>
+  </header>
+
+  <div class="banner banner--short" style="background-image: url('assets/img/banners/software.png')">
+    <div class="container">
+      <h1>Software</h1>
+    </div>
+  </div>
+
+  <main id="main">
+<section class="band band--white">
+<div class="container">
+<h2 class="h-lg center muted" id="software-for-applied-topology-research">Software for applied topology research</h2>
+<p class="center">The applied topology field grows each day, and with this growth comes a variety of new tools. Our group has contributed to this effort, but we also appreciate the tools that others have created. This page is meant to serve as a resource for people to learn more about our work and to find additional tools that might be useful in their research.</p>
+<p class="jump-links center"><a href="#oursoftware">Open Applied Topology</a> <a href="#additionaltools">Additional tools</a></p>
+</div>
+</section>
+<section class="band band--dark">
+<div class="container">
+<div class="topic">
+<h2 class="h-lg center" id="oursoftware">Open Applied Topology</h2>
+<p><img alt="A noisy spherical point cloud with an embedded two-cycle representative, the Open Applied Topology icon" src="assets/img/figures/oat-icon.png"></p>
+<p>Open Applied Topology (OAT) is a library for fast, user-friendly algebra and topology. Developed by PNNL as an extension of our collaborative ExHACT project, OAT has:</p>
+<ol>
+<li>a fast backend written in Rust, called <a href="https://github.com/OpenAppliedTopology/oat_rust">oat_rust</a></li>
+<li>a frontend for Python users, called <a href="https://github.com/OpenAppliedTopology/oat_python">oat_python</a></li>
+<li>tutorials published as <a href="https://openappliedtopology.github.io/">jupyter notebooks</a></li>
+</ol>
+</div>
+</div>
+</section>
+<section class="band band--white">
+<div class="container">
+<h2 class="h-lg center muted" id="additionaltools">Additional tools</h2>
+<p class="center muted">There is a tremendous amount of work going on in the computational topology community, so this page will be out of date shortly (and already misses plenty). Thus, this page is meant primarily to be a jumping-off point, not a comprehensive list. However, if you'd like me to add something, please let me know, and please don't be offended if you don't see something here -- all omissions are unintentional.</p>
+<p class="jump-links"><a href="#ctools">C++</a> <a href="#pythontools">Python</a> <a href="#juliatools">Julia</a> <a href="#rtools">R</a> <a href="#javatools">Java</a> <a href="#matlabtools">Matlab</a></p>
+<h3 id="ctools">C++</h3>
+<ul class="tool-list">
+<li><a href="https://github.com/shaunharker/CHomP">CHomP</a><span class="authors">Shaun Harker</span></li>
+<li><a href="https://bitbucket.org/hubwag/chunkyeuler/src/master/">ChunkyEuler</a> (also has python scripts)<span class="authors">Teresa Heiss, Hubert Wagner</span></li>
+<li><a href="https://github.com/shizuo-kaji/CubicalRipser_3dim">CubicalRipser</a> (with python wrapper)<span class="authors">Takeki Sudo, Kazushi Ahara, Shizuo Kaji</span></li>
+<li><a href="https://bitbucket.org/hubwag/cubicle/src/master/">Cubicle</a> (also has python scripts)<span class="authors">Hubert Wagner</span></li>
+<li><a href="http://www.mrzv.org/software/dionysus/">Dionysus</a> and <a href="http://www.mrzv.org/software/dionysus2/">Dionysus 2</a><span class="authors">Dmitriy Morozov</span></li>
+<li><a href="https://github.com/luetge/flagser">flagser</a><span class="authors">Daniel Lütgehetmann</span></li>
+<li><a href="http://gudhi.gforge.inria.fr/doc/latest/">GUDHI</a><span class="authors">Clément Maria, Pawel Dlotko, Vincent Rouvreau, François Godi, Siargey Kachanovich, and David Salinas</span></li>
+<li><a href="https://github.com/giotto-ai/giotto-tda">giotto-tda</a> (also Python)<span class="authors">Umberto Lupo, Julian Burella Pérez, and Wojciech Reise (I believe - there may be more)</span></li>
+<li><a href="https://bitbucket.org/grey_narn/hera">Hera</a><span class="authors">Michael Kerber, Dmitriy Morozov, and Arnur Nigmetov</span></li>
+<li><a href="http://people.maths.ox.ac.uk/nanda/perseus/index.html">Perseus</a><span class="authors">Vidit Nanda</span></li>
+<li><a href="https://www.math.upenn.edu/~dlotko/persistenceLandscape.html">Persistence Landscape Toolbox</a><span class="authors">Pawel Dlotko</span></li>
+<li><a href="https://bitbucket.org/phat-code/phat">PHAT</a><span class="authors">Ulrich Bauer, Michael Kerber, Jan Reininghaus, Hubert Wagner, and Bryn Keller</span></li>
+<li><a href="http://live.ripser.org/">Ripser-live</a> (browser) and <a href="https://github.com/Ripser">Ripser</a><span class="authors">Ulrich Bauer</span></li>
+<li><a href="https://github.com/simonzhang00/ripser-plusplus">Ripser++</a> (also Python, GPU)<span class="authors">Birkan Gokbag, Ryan DeMilt, and Simon Zhang</span></li>
+<li><a href="http://web.cse.ohio-state.edu/~dey.8/SimBa/Simba.html">SimBa</a> and <a href="http://web.cse.ohio-state.edu/~dey.8/SimPers/Simpers.html">SimPer</a><span class="authors">Tamal K Dey, Fengtao Fan, Dayu Shi, and Yusu Wang</span></li>
+<li><a href="https://topology-tool-kit.github.io/">Topology ToolKit</a><span class="authors">Julien Tierny, Guillaume Favelier, Joshua Levine, Charles Gueunet, and Michaël Michaux (I think?)</span></li>
+</ul>
+<h3 id="pythontools">Python</h3>
+<ul class="tool-list">
+<li><a href="https://braindynamicslab.github.io/dyneusr/">DyNeuSR</a><span class="authors">Caleb Geniesse, Manish Saggar, Rafi Ayub, and Jeff Mentch</span></li>
+<li><a href="https://kepler-mapper.scikit-tda.org/en/latest/">Kepler Mapper</a><span class="authors">Hendrik Jacob van Veen, Nathaniel Saul, David Eargle, and Sam Mangham (this is a guess based on their paper)</span></li>
+<li><a href="http://danifold.net/mapper/index.html">Python Mapper</a><span class="authors">Daniel Müllner and Aravindakshan Babu</span></li>
+<li><a href="https://pypi.org/project/ripser/">ripser.py</a><span class="authors">Christopher Tralie and Nathaniel Saul</span></li>
+</ul>
+<h3 id="juliatools">Julia</h3>
+<ul class="tool-list">
+<li><a href="http://gregoryhenselman.org/eirene/index.html">Eirene</a><span class="authors">Gregory Henselman-Petrusek</span></li>
+<li><a href="https://github.com/nebneuron/Simplicial">Simplicial complexes for Julia</a><span class="authors">Alex Kunin and Vladimir Itskov</span></li>
+</ul>
+<h3 id="rtools">R</h3>
+<ul class="tool-list">
+<li><a href="https://rdrr.io/cran/BallMapper/">BallMapper</a><span class="authors">Pawel Dlotko</span></li>
+<li><a href="https://people.clas.ufl.edu/peterbubenik/intro-to-tda/">R scripts for TDA</a><span class="authors">Peter Bubenik</span></li>
+<li><a href="https://cran.r-project.org/web/packages/TDA/index.html">TDA</a><span class="authors">Brittany T. Fasy, Jisu Kim, Fabrizio Lecci, and Clément Maria</span></li>
+<li><a href="https://github.com/paultpearson/TDAmapper">TDAMapper</a><span class="authors">Paul Pearson, Daniel Müllner, and Gurjeet Singh</span></li>
+</ul>
+<h3 id="javatools">Java</h3>
+<ul class="tool-list">
+<li><a href="https://github.com/appliedtopology">JavaPlex</a><span class="authors">Andrew Tausz, Mikael Vejdemo-Johansson and Henry Adams</span></li>
+</ul>
+<h3 id="matlabtools">Matlab</h3>
+<ul class="tool-list">
+<li><a href="https://github.com/nebneuron/clique-top">CliqueTop</a> and <a href="https://github.com/nerdnik/PyCliqueTop_2023">PyCliqueTop</a><span class="authors">A previous Chad Giusti.</span><span class="remark">We include CliqueTop for historical reasons or Matlab-only applications. PyCliqueTop is a Python implementation of the same wrapper that uses the Ripser persistent homology solver and thus is dramatically more time- and memory-efficient. OAT does not currently implement the precise syntax or workflow of CliqueTop, but provides substantially more functionality than either alternative.</span></li>
+</ul>
+</div>
+</section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container grid grid--footer">
+      <img class="footer-logo" src="assets/img/logos/osu-college-of-science.jpg" alt="Oregon State University College of Science">
+      <p class="footer-address">College of Science<br>Kidder Hall 368<br>Corvallis, OR 97331-4605</p>
+    </div>
+  </footer>
+
+  <nav id="mobile-nav" class="nav nav--mobile" aria-label="Primary, mobile" hidden>
+    <button class="hamburger hamburger--close" type="button" aria-label="Close menu"><span></span></button>
+    <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li class="active"><a href="software.html" aria-current="page">Software</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="personal.html">Personal</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

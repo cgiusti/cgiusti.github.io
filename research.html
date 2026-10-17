@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<!-- templates/base.html: page skeleton. Implements PLAN.md section 4.2; structure per docs/source-site/STYLE.md. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research | Applied Topology Group</title>
+  <meta name="description" content="Chad Giusti&#x27;s academic web page">
+  <link rel="icon" href="assets/img/logos/atg-logo.png">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script src="assets/js/nav.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html"><img src="assets/img/logos/atg-logo.png" alt="Applied Topology Group home"></a>
+      <nav class="nav nav--desktop" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="software.html">Software</a></li>
+          <li class="active"><a href="research.html" aria-current="page">Research</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="personal.html">Personal</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu"><span></span></button>
+    </div>
+  </header>
+
+  <div class="banner banner--short" style="background-image: url('assets/img/banners/research.png')">
+    <div class="container">
+      <h1>Research</h1>
+    </div>
+  </div>
+
+  <main id="main">
+<section class="band band--white">
+<div class="container">
+<h2 class="h-xl center muted" id="our-research">Our research</h2>
+<p class="center h-md muted">The applied topology group at Oregon State University employs topology to investigate a variety of complex systems. Our work includes:</p>
+<div class="grid grid--two">
+<div class="topic">
+<p><a href="#methods-in-applied-topology"><img alt="A filtered simplicial complex growing from a few triangles, with a blue-shaded square marking a new face" src="assets/img/figures/topic-methods.png"></a></p>
+<h3 class="h-md" id="topic-methods"><a href="#methods-in-applied-topology">Methods in applied topology</a></h3>
+<p>We develop new mathematical frameworks and computational tools for the study of complex systems through the modern language of shape. We are particularly interested in methods that will allow us to address fundamental scientific questions, and in understanding how and why topological structure arises so often in the natural world.</p>
+</div>
+<div class="topic">
+<p><a href="#topological-neuroscience"><img alt="A simplicial complex with a blue-shaded face drawn inside a thick looping curve that suggests a neural manifold" src="assets/img/figures/topic-neuro.png"></a></p>
+<h3 class="h-md" id="topic-neuro"><a href="#topological-neuroscience">Topological neuroscience</a></h3>
+<p>In collaboration with experimental neuroscientists, we study the structure and function of <em>in vivo</em> and simulated neural systems with the goal of developing fundamental theory about the encoding of information and performance of computations in the brain.</p>
+</div>
+</div>
+<p class="center h-md muted">However, we are always interested in <a href="#other-applications">Other Applications</a> across a range of disciplines.</p>
+<p class="center">The Applied Topology Group is grateful to the National Science Foundation, the Air Force Office of Scientific Research, and the Air Force Research Laboratory for their prior support of our work, and to Oregon State University for their ongoing support for our work.</p>
+</div>
+</section>
+<section class="band band--light">
+<div class="container">
+<h2 class="h-lg center" id="methods-in-applied-topology">Methods in applied topology</h2>
+<div class="grid grid--icon">
+<p><img alt="" src="assets/img/figures/topic-methods.png"></p>
+<div>
+<p>Modern techniques in applied topology are evolving rapidly, and there are many open questions. We are interested in how measures of topology reflect the organization of systems, and why such structures arise in nature. To study these questions, we develop tools for interpreting topological measures <em>in situ</em>.</p>
+<p>Our recent work broadly fits roughly into two categories:</p>
+</div>
+</div>
+<h3 class="h-sm" id="1-understanding-how-topology-measures-structure-in-complex-systems">1. Understanding How Topology Measures Structure in Complex Systems:</h3>
+<p>Due to computational limitations and underdeveloped mathematics, early applications of persistent homology have largely focused on statistics of persistence diagrams. Interpretation in terms of the original systems from which they were computed is usually <em>ad hoc</em> and prone to subtle errors. In our view, these difficulties have inhibited wide-spread application of topological methods in the sciences. One of our primary aims is thus developing rigorous, formal workflows that connect quantitative topological measures and the structure of the system they represent. Our recent work includes the Open Applied Topology software package, which provides full access to the algebraic structures underlying persistence; a user's guide for optimizing persistent cycle representatives; and, the method of analogous cycles, which matches persistent homology classes across systems using observed cross-dissimilarities.</p>
+<div class="pub-list">
+<article class="pub">
+<div class="pub-text">
+<p><strong>Dowker&#x27;s theorem for higher-order relations</strong><br>Vin de Silva, Chad Giusti, Vladimir Itskov, Michael Robinson, Radmila Sazdanovic, Nikolas Schonsheck, Melvin Vaupel, and Iris Yoon</p>
+<p class="muted">Journal of Applied and Computational Topology 10 (2), 2026</p>
+<p class="pub-links"><a href="https://doi.org/10.1007/s41468-026-00239-x">paper</a> <a href="https://arxiv.org/abs/2506.10909">arXiv</a></p>
+</div>
+<img src="assets/img/figures/dowker-cross-section.png" alt="Three polyhedral complexes side by side, each a quotient of a larger complex: a wireframe with black and grey edges, a polyhedron with green-shaded square faces, and a second wireframe.">
+</article>
+<article class="pub">
+<div class="pub-text">
+<p><strong>Persistent extensions and analogous bars: data-induced relations between persistence barcodes</strong><br>Hee Rhang Yoon, Robert Ghrist &amp; Chad Giusti</p>
+<p class="muted">Journal of Applied and Computational Topology 7 (3), 2023</p>
+<p class="pub-links"><a href="https://link.springer.com/article/10.1007/s41468-023-00115-y">paper</a> <a href="https://github.com/UDATG/tracking_cycles">code</a></p>
+</div>
+<img src="assets/img/figures/pub-analogous-bars.png" alt="One persistence barcode with its bars split by color into long bars (blue), short bars (purple) and a single distinguished bar (green) at a dashed threshold line, with an inset point cloud showing two cycle representatives.">
+</article>
+<article class="pub">
+<div class="pub-text">
+<p><strong>Open Applied Topology</strong><br>Based on the ExHACT project by Gregory Henselman-Petrusek, Lori Ziegelmeier, Chad Giusti</p>
+<p class="muted">primarily supported and maintained by Pacific Northwest National Laboratory</p>
+<p class="pub-links"><a href="https://openappliedtopology.github.io/">code</a></p>
+</div>
+<img src="assets/img/figures/pub-oat.png" alt="A spherical point cloud rendered as a wireframe with highlighted sample points, as computed by Open Applied Topology.">
+</article>
+<article class="pub">
+<div class="pub-text">
+<p><strong>Minimal Cycle Representatives in Persistent Homology Using Linear Programming: An Empirical Study With User&#x27;s Guide</strong><br>Lu Li, Connor Thompson, Gregory Henselman-Petrusek, Chad Giusti, Lori Ziegelmeier</p>
+<p class="muted">Frontiers in Artificial Intelligence 4, 2021</p>
+<p class="pub-links"><a href="https://www.frontiersin.org/journals/artificial-intelligence/articles/10.3389/frai.2021.681117/full">paper</a> <a href="https://github.com/UDATG/optimal_reps">code</a></p>
+</div>
+<img src="assets/img/figures/pub-min-cycle-reps.png" alt="Five panels: A to D show one planar simplicial complex with a square hole and four different dashed cycle representatives of the same class; E shows a three-step filtration in which a cycle representative grows and splits.">
+</article>
+<article class="pub">
+<div class="pub-text">
+<p><strong>Eulerian Magnitude Homology: Subgraph Structure and Random Graphs</strong><br>Chad Giusti and Giuliamaria Menara</p>
+<p class="muted">arXiv:2403.09248, 2024</p>
+<p class="pub-links"><a href="https://arxiv.org/pdf/2403.09248">paper</a></p>
+</div>
+<img src="assets/img/figures/pub-eulerian-magnitude.png" alt="Plots of Eulerian magnitude homology ranks against graph parameters for random graphs.">
+</article>
+</div>
+<h3 class="h-sm" id="2-developing-iterated-integrals-as-a-feature-set-for-function-spaces">2. Developing Iterated Integrals as a Feature Set for Function Spaces</h3>
+<p>Persistent homology characterizes structure in filtered spaces. However, some data are better described in terms of functions into a state space. Function spaces are a topic of classical study in algebraic topology, and Chen's iterated integral framework for cochains on mapping spaces, recently recast as the Path Signature in the study of SDEs and ML, provides a well-founded and robust framework for studying such data. We have applied this framework to the study of time-varying persistence diagrams; and, to describe the algebraic properties of the signature transform for higher-dimensional domains.</p>
+<div class="pub-list">
+<article class="pub">
+<div class="pub-text">
+<p><strong>A topological approach to mapping space signatures</strong><br>Chad Giusti, Darrick Lee, Vidit Nanda, Harald Oberhauser</p>
+<p class="muted">Advances in Applied Mathematics 163, 2025</p>
+<p class="pub-links"><a href="https://www.sciencedirect.com/science/article/abs/pii/S0196885824001192">paper</a></p>
+</div>
+<img src="assets/img/figures/pub-mapping-space-signatures.png" alt="Four squares with vertices drawn solid or half-filled and some edges highlighted in magenta, labelled s2 s1(00), s1(e0), s2(e0) and g1(e0), with coordinate axes 1 and 2 at the left; terms of the cubical mapping space signature.">
+</article>
+<article class="pub">
+<div class="pub-text">
+<p><strong>Signatures, Lipschitz-Free Spaces, and Paths of Persistence Diagrams</strong><br>Chad Giusti and Darrick Lee</p>
+<p class="muted">SIAM Journal on Applied Algebra and Geometry 7 (4), 2023</p>
+<p class="pub-links"><a href="https://epubs.siam.org/doi/pdf/10.1137/22M1528471">paper</a> <a href="https://github.com/ldarrick/paths-of-persistence-diagrams">code</a></p>
+</div>
+<img src="assets/img/figures/pub-swarm-signatures.png" alt="Three snapshots of a simulated swarm at t=3, t=75 and t=175, drawn as red points with teal motion trails, going from a tangle to a ring to parallel streams.">
+</article>
+<article class="pub">
+<div class="pub-text">
+<p><strong>Iterated Integrals and Population Time Series Analysis</strong><br>Chad Giusti and Darrick Lee</p>
+<p class="muted">Topological Data Analysis (Abel Symposia 15), Springer, 2020</p>
+<p class="pub-links"><a href="https://doi.org/10.1007/978-3-030-43408-3_9">paper</a> <a href="https://arxiv.org/abs/1811.03558">arXiv</a></p>
+</div>
+<img src="assets/img/figures/pub-iterated-integrals.png" alt="Two pairs of periodic time series, smooth sinusoids above and a sharply reparametrized version below, sent by a correlation function to a delay plot that distinguishes them and by the second-order iterated integral to a closed loop in the plane that gives the same value, 11.6, for both.">
+</article>
+</div>
+</div>
+</section>
+<section class="band band--white">
+<div class="container">
+<h2 class="h-lg center" id="topological-neuroscience">Topological neuroscience</h2>
+<div class="grid grid--icon">
+<p><img alt="" src="assets/img/figures/topic-neuro.png"></p>
+<div>
+<p>Topology is the mathematics of "local-to-global" inference. That is, topological tools are designed to sew together local observations to describe nonlinear global phenomena. In this light, it is perhaps less surprising that they are uniquely well-suited for describing systems like the brain, in which the simple computations performed by individual neurons are synthesized into our rich internal representations of the state of the world, and their dynamics give rise to planning and execution of intricate behaviors to interact with it. The introduction of modern topological methods to neuroscience is quite recent, and there are more questions than answers. For a brief overview of some of the big ideas we recommend the following surveys, some of which are written for non-mathematicians.</p>
+</div>
+</div>
+<div class="pub-list">
+<article class="pub">
+<div class="pub-text">
+<p><strong>Two&#x27;s Company, Three&#x27;s a Simplex</strong><br>Chad Giusti, Robert Ghrist &amp; Danielle S. Bassett</p>
+<p class="muted">Journal of Computational Neuroscience 41 (1), 2016</p>
+<p class="pub-links"><a href="https://link.springer.com/article/10.1007/s10827-016-0608-6">paper</a></p>
+</div>
+<img src="assets/img/figures/pub-twos-company.webp" alt="Eight small panels showing how a brain network is built and analysed: brain regions and measures of connectivity, activity traces, an edge-only triangle beside a filled triangle, a similarity matrix binarised at a sequence of thresholds, and a plot of component count against threshold.">
+</article>
+<article class="pub">
+<div class="pub-text">
+<p><strong>Topological Neuroscience: Linking Circuits to Function</strong><br>Carina Curto and Nicole Sanderson</p>
+<p class="pub-links"><a href="https://www.annualreviews.org/content/journals/10.1146/annurev-neuro-112723-034315">paper</a></p>
+</div>
+<img src="assets/img/figures/pub-topological-neuroscience.png" alt="Grid cell firing fields of two modules with their hexagonal tilings, each tiling identified first with a cylinder and then with a torus, and a trajectory drawn in blue across the fields, the cylinder and the torus.">
+</article>
+<article class="pub">
+<div class="pub-text">
+<p><strong>What can topology tell us about the neural code?</strong><br>Carina Curto</p>
+<p class="pub-links"><a href="https://www.ams.org/journals/bull/2017-54-01/S0273-0979-2016-01554-0/S0273-0979-2016-01554-0.pdf">paper</a></p>
+</div>
+<img src="assets/img/figures/pub-neural-code.png" alt="Five overlapping bell-shaped tuning curves over an orientation axis with the curve centered at 45 degrees drawn bold, two oriented bars, and a neuron whose spike train is dense for one orientation and sparse for the other.">
+</article>
+<article class="pub">
+<div class="pub-text">
+<p><strong>Importance of the whole: Topological data analysis for the network neuroscientist</strong><br>Ann E. Sizemore, Jennifer E. Phillips-Cremins, Robert Ghrist, Danielle S. Bassett</p>
+<p class="pub-links"><a href="https://direct.mit.edu/netn/article/3/3/656/2178/The-importance-of-the-whole-Topological-data">paper</a></p>
+</div>
+<img src="assets/img/figures/pub-importance-of-the-whole.png" alt="Two pale brain outlines: the left with a single curved arrow across it, the right with an orange and a grey arrow curving in from opposite directions.">
+</article>
+<article class="pub pub--text-only">
+<div class="pub-text">
+<p><strong>Topological Adventures in Neuroscience</strong><br>Kathryn Hess</p>
+<p class="pub-links"><a href="https://link.springer.com/chapter/10.1007/978-3-030-43408-3_11">paper</a></p>
+</div>
+</article>
+<article class="pub">
+<div class="pub-text">
+<p><strong>A hands-on tutorial on network and topological neuroscience</strong><br>Eduarda Gervini Zampieri Centeno, Giulia Moreni, Chris Vriend, Linda Douw &amp; Fernando Antônio Nóbrega Santos</p>
+<p class="pub-links"><a href="https://link.springer.com/article/10.1007/s00429-021-02435-0">paper</a></p>
+</div>
+<img src="assets/img/figures/pub-hands-on-tutorial.png" alt="A translucent side view of a brain containing a network of nodes and edges, the nodes sized and colored from purple (low) to yellow (high) on a vertical color bar.">
+</article>
+</div>
+<h3 class="h-sm" id="our-work">Our work</h3>
+<p>Our recent work has been focused on implications for neural computation of the classical nerve theorem of algebraic topology. In context, it effectively tells us that we can use observations of neural activity to reconstruct the topology (and some geometry) of the information encoded by a neural population. This purely mathematical fact is the reason for the appearance of so-called <em>neural manifolds</em>, low-dimensional subspaces of the space of population neuron activation profiles, along which activity is constrained.</p>
+<p>In his <a href="https://www.pnas.org/doi/pdf/10.1073/pnas.1506407112">postdoctoral work</a>, the PI demonstrated that topological measurements of neural population activity alone were sufficient to detect or falsify the presence of a neural manifold, without reference to external stimulus or behavior. In the interim, we have been interested in understanding how these objects arise as a result of neural activity, and developing a mathematical framework for understanding the resulting computational model at the level of neural manifolds, rather than individual or collective neuronal activity. In recent work, we have constructed a method for comparing topological features across neural manifolds, or between neural manifolds and observed stimuli and behaviors; and described combinatorial foundations of convex coding, which underlies such receptive field models of neural activity.</p>
+<div class="pub-list">
+<article class="pub">
+<div class="pub-text">
+<p><strong>Tracking the topology of neural manifolds across populations</strong><br>Iris H.R. Yoon, Gregory Henselman-Petrusek, Yiyi Yu, Robert Ghrist, Spencer LaVere Smith, and Chad Giusti</p>
+<p class="muted">PNAS 121 (46), 2024</p>
+<p class="pub-links"><a href="https://www.pnas.org/doi/10.1073/pnas.2407997121">paper</a> <a href="https://github.com/irishryoon/analogous_neural">code</a></p>
+</div>
+<img src="assets/img/figures/pub-tracking-neural-manifolds.png" alt="Schematic of the method of analogous cycles matching a circular feature across two neural manifolds.">
+</article>
+<article class="pub">
+<div class="pub-text">
+<p><strong>A No-Go Theorem for One-Layer Feedforward Networks</strong><br>Chad Giusti and Vladimir Itskov</p>
+<p class="muted">Neural Computation 26 (11), 2014</p>
+<p class="pub-links"><a href="https://doi.org/10.1162/neco_a_00657">paper</a> <a href="https://arxiv.org/abs/1310.3796">arXiv</a></p>
+</div>
+<img src="assets/img/figures/pub-no-go-network.png" alt="A one-layer feedforward network: three input circles in an upper row, labelled y_a, connected by arrows with weights U_ia to four output circles in a lower row, labelled x_i.">
+</article>
+<article class="pub">
+<div class="pub-text">
+<p><strong>On Open and Closed Convex Codes</strong><br>Joshua Cruz, Chad Giusti, Vladimir Itskov, and Bill Kronholm</p>
+<p class="muted">Discrete &amp; Computational Geometry 61 (2), 2019</p>
+<p class="pub-links"><a href="https://doi.org/10.1007/s00454-018-00050-1">paper</a> <a href="https://arxiv.org/abs/1609.03502">arXiv</a></p>
+</div>
+<img src="assets/img/figures/pub-convex-codes.png" alt="Six colored regions labelled U1 to U6 arranged around a square: on the left each is an open half-disc with a dashed boundary, on the right each is a closed arc, two realizations of the same code.">
+</article>
+</div>
+</div>
+</section>
+<section class="band band--light">
+<div class="container">
+<h2 class="h-lg center" id="other-applications">Other applications</h2>
+<p>The tools we develop are not specific to neuroscience. Working with collaborators in physics, cognitive science, geography, and cell biology, we have used topological and geometric measures to study force chains in granular materials under compression, the growth of semantic networks as children learn words, maps and networks for disaster preparation and response, single-cell proteomic profiles of differentiating neurons, and the classification of networks through the lens of homology.</p>
+<div class="pub-list">
+<article class="pub">
+<div class="pub-text">
+<p><strong>Leveraging Topological Data Analysis for disaster preparation and response, a cartographic perspective</strong><br>Connor Progin, Carolyn Fish, Chad Giusti, David Retchless, Courtney Thatcher, and Jim Thatcher</p>
+<p class="muted">Abstracts of the International Cartographic Association 10, 2025</p>
+<p class="pub-links"><a href="https://doi.org/10.5194/ica-abs-10-235-2025">paper</a></p>
+</div>
+<img src="assets/img/figures/pub-disaster-cartography.png" alt="A road network drawn in grey on a black background, with one route highlighted as a thick teal path and a cluster of green nodes marking points along the roads to the right.">
+</article>
+<article class="pub">
+<div class="pub-text">
+<p><strong>Single-Cell Proteomics Reveals Proteome Remodeling and Cellular Heterogeneity During NGF-Induced PC12 Neuronal Differentiation</strong><br>Arpa Ebrahimi, Shuxin Chi, Jun Yang, Phoebe Y. Lee, Prongbaramee K. Colling, Hailey Mendenhall, Chad Giusti, David A. Hendrix, Leonard J. Foster, and Claudia S. Maier</p>
+<p class="muted">ACS Chemical Neuroscience 17 (15), 2026</p>
+<p class="pub-links"><a href="https://doi.org/10.1021/acschemneuro.6c00109">paper</a></p>
+</div>
+<img src="assets/img/figures/pub-single-cell-proteomics.png" alt="A horizontal strip through a network of pathway terms drawn as colored circles joined by purple edges: brown, light green, salmon, blue and grey clusters linked by long edges, a dense dark blue cluster at the right edge, and red nodes entering from below.">
+</article>
+</div>
+</div>
+</section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container grid grid--footer">
+      <img class="footer-logo" src="assets/img/logos/osu-college-of-science.jpg" alt="Oregon State University College of Science">
+      <p class="footer-address">College of Science<br>Kidder Hall 368<br>Corvallis, OR 97331-4605</p>
+    </div>
+  </footer>
+
+  <nav id="mobile-nav" class="nav nav--mobile" aria-label="Primary, mobile" hidden>
+    <button class="hamburger hamburger--close" type="button" aria-label="Close menu"><span></span></button>
+    <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="members.html">Members</a></li>
+          <li><a href="software.html">Software</a></li>
+          <li class="active"><a href="research.html" aria-current="page">Research</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="personal.html">Personal</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
